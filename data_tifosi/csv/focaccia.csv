@@ -1,0 +1,37 @@
+id_focaccia;nom_focaccia;prix;ingrédients
+1;Mozaccia;9.80;Base tomate, Mozarella, cresson, jambon fumé, ail, artichaut, champignon, parmesan, poivre, olive noire
+2;Gorgonzollaccia;10.80;Base tomate, Gorgonzola, cresson, ail, champignon, parmesan, poivre, olive noire
+3;Raclaccia;8.90;Base tomate, raclette, cresson, ail, champignon, parmesan, poivre
+4;Emmentalaccia;9.80;Base crème, Emmental, cresson, champignon, parmesan, poivre, oignon
+5;Tradizione;8.90;Base tomate, Mozarella, cresson, jambon cuit, champignon(80), parmesan, poivre, olive noire(10), olive verte(10)
+6;Hawaienne;11.20;Base tomate, Mozarella, cresson, bacon, ananas, piment, parmesan, poivre, olive noire
+7;Américaine;10.80;Base tomate, Mozarella, cresson, bacon, pomme de terre(40), parmesan, poivre, olive noire
+8;Paysanne;12.80;Base crème, Chèvre, cresson, pomme de terre, jambon fumé, ail, artichaut, champignon, parmesan, poivre, olive noire, œuf
+;;;
+;;;
+;;;Sauf indication contraire, les quantités associées à chaque ingrédient sont (en grammes) :
+;;;Ail : 2
+;;;Ananas : 40
+;;;Artichaut : 20
+;;;Bacon : 80
+;;;Base Tomate : 200
+;;;Base crème : 200
+;;;Champignon : 40
+;;;Chevre : 50
+;;;Cresson : 20
+;;;Emmental : 50
+;;;Gorgonzola : 50
+;;;Jambon cuit : 80
+;;;Jambon fumé : 80
+;;;Œuf : 50
+;;;Oignon : 20
+;;;Olive noire : 20
+;;;Olive verte : 20
+;;;Parmesan : 50
+;;;Piment : 2
+;;;Poivre : 1
+;;;Pomme de terre : 80
+;;;Raclette : 50
+;;;Salami : 80
+;;;Tomate cerise : 40
+;;;Mozarella : 50
