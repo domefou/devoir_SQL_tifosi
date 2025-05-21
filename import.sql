@@ -208,12 +208,14 @@ DROP TABLE `tifosi`.`temp_boisson`;
 /*--------------------------------------------------------*/
 /*CREATION des TRIGGERS*/
 
+/*mettre a jour la table "comprend" aprés suppression d'ingrédient de la table "ingrédient".*/
 CREATE TRIGGER supprimer_comprend_apres_ingrédient
     AFTER DELETE ON ingrédient
     FOR EACH ROW
     DELETE FROM comprend 
     WHERE id_ingrédient = OLD.id_ingrédient;
 
+/*mettre a jour la table "boisson" aprés suppression de marque de la table "marque".*/
 CREATE TRIGGER supprimer_boisson_apres_marque
 AFTER DELETE ON marque
 FOR EACH ROW
@@ -224,6 +226,7 @@ WHERE id_boisson IN (
     WHERE id_marque = OLD.id_marque
     );
 
+/*calcule automatisé des prix de la table menu apres ajout d'article depuis "estconstitué" et "contient".*/
 CREATE TRIGGER maj_prix_menu_apres_focaccia
 AFTER INSERT ON estconstitué
 FOR EACH ROW
@@ -236,7 +239,7 @@ SET prix_menu = (
     )
 WHERE id_menu = NEW.id_menu;
 
-
+/*ajout du prix de boisson = 2.50 au total du prix de menu de la table menu*/
 CREATE TRIGGER ajouter_prix_boisson
     AFTER INSERT ON contient
     FOR EACH ROW
