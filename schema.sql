@@ -1,8 +1,3 @@
-/*
-Utilisateur: tifosi
-mdp: tifosi0000
-*/
-
 /* CREATION base de donné tifosi */
 CREATE DATABASE tifosi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -133,12 +128,4 @@ CREATE TABLE achete (
     FOREIGN KEY (id_menu) REFERENCES menu (id_menu) ON DELETE CASCADE ON UPDATE CASCADE
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-
-
-SELECT id_focaccia, id_ingrédient, COUNT(*)
-FROM temporary_focaccia
-GROUP BY id_focaccia, id_ingrédient
-HAVING COUNT(*) > 1;
-
-SELECT user, host FROM mysql.user WHERE user = 'tifosi';
 

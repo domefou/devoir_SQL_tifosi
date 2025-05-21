@@ -236,6 +236,7 @@ SET prix_menu = (
     )
 WHERE id_menu = NEW.id_menu;
 
+
 CREATE TRIGGER ajouter_prix_boisson
     AFTER INSERT ON contient
     FOR EACH ROW

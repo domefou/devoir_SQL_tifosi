@@ -1,23 +1,3 @@
-/*selectionner quel article on ete commander dans le menu "5"
-SELECT m.id_menu, e.id_focaccia, c.id_boisson
-FROM menu m
-LEFT JOIN estconstitué e ON m.id_menu = e.id_menu
-LEFT JOIN contient c ON m.id_menu = c.id_menu
-WHERE m.id_menu = 1 -- Remplace `1` par l'id_menu souhaité
-GROUP BY m.id_menu, e.id_focaccia, c.id_boisson;
-
-SELECT m.id_menu, f.nom_focaccia, b.nom_boisson
-FROM menu m
-LEFT JOIN estconstitué e ON m.id_menu = e.id_menu
-LEFT JOIN focaccia f ON e.id_focaccia = f.id_focaccia
-LEFT JOIN contient c ON m.id_menu = c.id_menu
-LEFT JOIN boisson b ON c.id_boisson = b.id_boisson
-WHERE m.id_menu = 1 -- Remplace `1` par l'id_menu souhaité
-GROUP BY m.id_menu, f.nom_focaccia, b.nom_boisson;
-
-USE tifosi;
-SHOW TABLES;
-
 
 
 --1. Afficher la liste des noms des focaccias par ordre alphabétique croissant.
@@ -33,7 +13,6 @@ méricaine,Emmentalaccia,Gorgonzolaccia,Hawaienne,Mozaccia,Paysanne,Raclaccia,Tr
 --2. Afficher le nombre total d'ingrédients.
 SELECT COUNT(DISTINCT nom_ingrédient) AS total_ingrédients
 FROM ingrédient;
-
 
 --Le résultat attendu : 
 25
@@ -176,22 +155,3 @@ WHERE f.id_focaccia NOT IN (
 Hawaienne, Américaine
 --Le résultat obtenu :
 Hawaienne, Américaine
-
-
-
-
-
-
-SELECT user, host FROM mysql.user WHERE user = 'tifosi';
-
-DROP USER 'tifosi'@'%';
-FLUSH PRIVILEGES;
-
-
-SHOW VARIABLES LIKE 'local_infile';
-
-SET GLOBAL local_infile = 1;
-
-mysql/data/
-
-*/

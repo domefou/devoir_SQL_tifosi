@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # devoir_SQL_tifosi
 =======
 # Devoir SQL Tifosi
@@ -26,11 +26,10 @@ Une copie des fichiers convertis a déjà été effectuée et est disponible dan
 
 ## 🛠️ **Étapes à suivre**
 1️⃣ **Importer les fichiers dans cet ordre** :
-   - 📜 `schema.sql` → Définit la structure de la base de données.
-   - 📜 `import.sql` → Insère les données dans la base.
+   - `schema.sql` → Définit la structure de la base de données.
+   - `import.sql` → Insère les données dans la base.
 
 ---
 
 ## 🔎 **Vérification des requêtes**
-Une copie des requêtes SQL de base a été fournie afin de s'assurer du bon fonctionnement de la base de données.
->>>>>>> a5d3ba7 (création des fichier schema.sql, import.sql, request.sql et README.md)
+- le fichier `request.sql` représente une copie des requêtes SQL de base afin de s'assurer du bon fonctionnement de la base de données.
